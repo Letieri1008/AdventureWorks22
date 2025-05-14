@@ -16,4 +16,4 @@ on sod.ProductID = p.ProductID
 where p.Name like 'Mountain%'       
 order by sod.OrderQty desc
 
-![image](https://github.com/user-attachments/assets/16cb8049-9f35-4da8-ab20-9017eb941dc4)
+
