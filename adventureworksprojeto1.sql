@@ -1,0 +1,19 @@
+-- Eu quero sabre o nome do produto, a quantidade vendida e o preço unitário da  Mountain utilizando as tabelas Sales.SalesOrderDetail e Production.Product 
+
+
+select p.Name as N, sod.OrderQty , sod.UnitPrice 
+from Sales.SalesOrderDetail sod
+inner join Production.Product p
+on sod.ProductID = p.ProductID
+where p.Name like 'Mountain%'
+
+-- Agora ele pediu somente os 10 produtos dessa categoria que mais venderam --
+
+select top 10 p.name as Mountain Bike, sod.OrderQty, sod.UnitPrice
+from sales.SalesOrderDetail sod
+inner join Production.Product p 
+on sod.ProductID = p.ProductID
+where p.Name like 'Mountain%'       
+order by sod.OrderQty desc
+
+
