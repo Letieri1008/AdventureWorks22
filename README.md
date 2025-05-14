@@ -5,6 +5,8 @@ Na primeira tarefas, foi solicitado: O meu supervisor solicitou que realizasse u
 
 
 - As linhas de código estão publicas na pasta adventureworksprojeto1.sql
+- Para obter os resultados foi necessário utilizar os comandos INNER JOIN e LIKE para juntar as colunas das diferente tabelas que contem uma relação em ProductID e filtrar a palabra 'Mountain%'
+- % A porcentagem indica o nome que eu quero que seja filtrado, então, todos os nomes que contem ou começem com M ou Moutain serão exibidos.
 resultado da coleta no banco de dados final:
 
 ![image](https://github.com/user-attachments/assets/698b6a45-96e7-4f29-ab79-893b656d3764)
