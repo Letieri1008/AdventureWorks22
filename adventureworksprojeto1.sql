@@ -41,3 +41,19 @@ FROM sales.SalesOrderDetail so
 INNER JOIN Production.Product p ON so.ProductID = p.ProductID
 WHERE YEAR(so.ModifiedDate) = 2013
 ORDER BY so.LineTotal DESC
+
+#TAREFA 3
+
+-- Em uma reunião no setor financeiro, onde o meu gerente havia participado, foi solicitado a ele um levantamento do número de entidades cadastradas que possuem o maior cadastrado em um tipo x de cartão --
+--Para isso, precisei obter através da tabela sales.creditcard e sales.personcreditcard.
+
+select cc.CardType, COUNT(cc.CardType) as Total
+from sales.CreditCard cc
+inner join sales.PersonCreditCard pcc
+on cc.CreditCardID = pcc.CreditCardID
+group by cc.CardType
+order by Total desc
+
+
+
+
