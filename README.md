@@ -1,5 +1,6 @@
 # AdventureWorks22
 Tarefas utilizando linguagem SQL no SQL Serve Management + vscode para produtitividade.
+(Todos os comandos feitos para estudo ou apresentação estão disponíveis em adventureworksprojeto1.sql)
 
 Na primeira tarefas, foi solicitado: O meu supervisor solicitou que realizasse uma consulta no banco de dados AdventureWorks para obter informações sobre os produtos mais vendidos da categoria Mountain Bikes
 
