@@ -29,3 +29,11 @@ O segundo desafio, consistia em extrair informações a respeito dos 20 produtos
 
 
 
+
+O terceiro desafio, foi feita uma reunião no setor financeiro, onde o meu gerente havia participado, foi solicitado a ele um levantamento do número de entidades cadastradas que possuem o maior cadastrado em um tipo x de cartão --
+
+Resultado:
+
+![image](https://github.com/user-attachments/assets/bd315812-5f60-4640-94e6-34adeb9e9935)
+
+
