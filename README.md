@@ -13,3 +13,18 @@ resultado da coleta no banco de dados final:
 
 
 ![image](https://github.com/user-attachments/assets/fd4125c1-9812-4035-a175-f3b4da5d51fd)
+
+
+O segundo desafio, consistia em extrair informações a respeito dos 20 produtos que obtiveram o maior faturamento no ano de 2013
+- Todavia, na tabela ordem de vendas, as datas estavam formatadas em dd/mm/yyyy - hora
+- Logo, ao construir uma linha de comando utilizando between e ordenar no modo descrescente, apresentou o seguinte erro:
+
+![image](https://github.com/user-attachments/assets/288de386-9020-408e-a006-8da1b53825a1)
+
+- Portanto, precisei formatar para SELECT FORMAT(ModifiedDate, 'dd/MM/yyyy') AS FormattedDate
+- E assim, consegui unir a coluna que foi modificada de outra tabela e construir o que foi solicitado pelo gerente.
+
+![image](https://github.com/user-attachments/assets/4c9a4db9-43ee-4b33-8f23-b1482f59b4df)
+
+
+
