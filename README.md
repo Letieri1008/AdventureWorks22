@@ -47,4 +47,6 @@ Resultado:
 -- O nosso gestor de RH precisa de um levantamento de todos os funcionários que trabalham no grupo de Manufatura --
 -- tabela HumanResources.vEmployeeDepartmentHistory , HumanResources.Employee
 
+![image](https://github.com/user-attachments/assets/2200778e-9da0-49ac-ad6a-034071d7ccdc)
+
 
