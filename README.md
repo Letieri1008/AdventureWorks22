@@ -12,6 +12,8 @@ Na primeira tarefas, foi solicitado: O meu supervisor solicitou que realizasse u
 - As linhas de código estão publicas na pasta adventureworksprojeto1.sql
 - Para obter os resultados foi necessário utilizar os comandos INNER JOIN e LIKE para juntar as colunas das diferente tabelas que contem uma relação em ProductID e filtrar a palabra 'Mountain%'
 - % A porcentagem indica o nome que eu quero que seja filtrado, então, todos os nomes que contem ou começem com M ou Moutain serão exibidos.
+-  O resultado está na lista de códigos 
+
 resultado da coleta no banco de dados final:
 
 ![image](https://github.com/user-attachments/assets/698b6a45-96e7-4f29-ab79-893b656d3764)
@@ -29,6 +31,7 @@ O segundo desafio, consistia em extrair informações a respeito dos 20 produtos
 
 - Portanto, precisei formatar para SELECT FORMAT(ModifiedDate, 'dd/MM/yyyy') AS FormattedDate
 - E assim, consegui unir a coluna que foi modificada de outra tabela e construir o que foi solicitado pelo gerente.
+- O resultado está na lista de códigos 
 
 ![image](https://github.com/user-attachments/assets/4c9a4db9-43ee-4b33-8f23-b1482f59b4df)
 
@@ -46,6 +49,7 @@ Resultado:
 
 -- O nosso gestor de RH precisa de um levantamento de todos os funcionários que trabalham no grupo de Manufatura --
 -- tabela HumanResources.vEmployeeDepartmentHistory , HumanResources.Employee
+- O resultado está na lista de códigos 
 
 ![image](https://github.com/user-attachments/assets/2200778e-9da0-49ac-ad6a-034071d7ccdc)
 
