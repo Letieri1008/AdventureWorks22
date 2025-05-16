@@ -2,6 +2,8 @@
 Tarefas utilizando linguagem SQL no SQL Serve Management + vscode para produtitividade.
 (Todos os comandos feitos para estudo ou apresentação estão disponíveis em adventureworksprojeto1.sql)
 
+Caso queira treinar, você pode baixar pelo link: https://learn.microsoft.com/pt-br/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms
+
 #TAREFA 1
 
 Na primeira tarefas, foi solicitado: O meu supervisor solicitou que realizasse uma consulta no banco de dados AdventureWorks para obter informações sobre os produtos mais vendidos da categoria Mountain Bikes
