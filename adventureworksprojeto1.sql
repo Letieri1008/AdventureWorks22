@@ -66,3 +66,34 @@ inner join HumanResources.Employee e
 on edh.BusinessEntityID = e.BusinessEntityID
 where edh.GroupName = 'Manufacturing'
 order by HireDate desc
+
+  
+#TAREFA 5
+
+  -- preciso fazer um levantamento dos profissionais que possuem a maior quantidade de filhos na cidade de Berlin e London  --
+Para isso, vou utilizar as tabelas
+dbo.DimCustomer
+dbo.DimGeography
+
+select TOP 10 c.FirstName, c.Lastname, c.Gender, c.TotalChildren, c.Phone, g.City
+from dbo.dimcustomer c 
+inner join dbo.DimGeography g
+on c.GeographyKey = g.GeographyKey
+where city = 'Berlin' 
+order by TotalChildren desc
+
+select TOP 10 c.FirstName, c.Lastname, c.Gender, c.TotalChildren, c.Phone, g.City
+from dbo.dimcustomer c 
+inner join dbo.DimGeography g
+on c.GeographyKey = g.GeographyKey
+where city = 'London' 
+order by TotalChildren desc
+
+select c.FirstName, c.Lastname, c.Gender, c.TotalChildren, c.Phone, g.City
+from dbo.dimcustomer c 
+inner join dbo.DimGeography g
+on c.GeographyKey = g.GeographyKey
+where c.Phone like 'Ale%' and city = 'Berlin'
+order by TotalChildren desc
+
+
