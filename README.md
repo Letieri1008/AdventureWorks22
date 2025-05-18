@@ -53,4 +53,15 @@ Resultado:
 
 ![image](https://github.com/user-attachments/assets/2200778e-9da0-49ac-ad6a-034071d7ccdc)
 
+#TAREFA 5
+
+-- preciso fazer um levantamento dos 10 primeiros profissionais que possuem a maior quantidade de filhos na cidade de Berlin e London  --
+-- Durante uma reunião, houve uma discussão sobre um funcionário, porém, não lembravamos do nome dele, apenas tinhamos informação de onde ele morava e o número de telefone
+-- Então, eu precisei buscar no banco de dados o nome dele utilizando o comando Like 'Ale%'
+- Segue o resultado:
+
+ ![image](https://github.com/user-attachments/assets/bff34a2b-e70e-4f77-abf8-7d9425d74bd2)
+![image](https://github.com/user-attachments/assets/53996fd4-fadf-4952-a680-37e479c0f392)
+
+  
 
