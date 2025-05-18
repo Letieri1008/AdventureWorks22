@@ -60,8 +60,11 @@ Resultado:
 -- Então, eu precisei buscar no banco de dados o nome dele utilizando o comando Like 'Ale%'
 - Segue o resultado:
 
- ![image](https://github.com/user-attachments/assets/bff34a2b-e70e-4f77-abf8-7d9425d74bd2)
+![image](https://github.com/user-attachments/assets/bff34a2b-e70e-4f77-abf8-7d9425d74bd2)
 ![image](https://github.com/user-attachments/assets/53996fd4-fadf-4952-a680-37e479c0f392)
+![image](https://github.com/user-attachments/assets/6442221f-c152-4883-ac23-5010034cd5f7)
+
+
 
   
 
