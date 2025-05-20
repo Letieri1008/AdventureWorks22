@@ -64,6 +64,21 @@ Resultado:
 ![image](https://github.com/user-attachments/assets/53996fd4-fadf-4952-a680-37e479c0f392)
 ![image](https://github.com/user-attachments/assets/6442221f-c152-4883-ac23-5010034cd5f7)
 
+#TAREFA 6
+
+-- Realizaram um pedido para coletar dados dos funcionários que irão receber um aumento salarial, e o setor financeiro precisa da identificação, setor e E-mail
+-- Para isso, preciso criar uma nova tabela temporária no banco de dados e enviar as informações corretamente
+-- As tabelas utilizadas foram:
+- HumanResources.Employee
+- person.Person
+
+Resultado:
+
+![image](https://github.com/user-attachments/assets/56275aab-fe0e-4f74-ad2e-ede54de28857)
+
+![image](https://github.com/user-attachments/assets/8b1a8f0a-64b1-4258-829c-383e7ce3eb80)
+
+
 
 
   
