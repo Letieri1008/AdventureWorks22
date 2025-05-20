@@ -72,6 +72,8 @@ Resultado:
 - HumanResources.Employee
 - person.Person
 
+  (Os comandos estão na pasta sql para consulta)
+
 Resultado:
 
 ![image](https://github.com/user-attachments/assets/56275aab-fe0e-4f74-ad2e-ede54de28857)
