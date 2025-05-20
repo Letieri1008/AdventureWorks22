@@ -96,4 +96,104 @@ on c.GeographyKey = g.GeographyKey
 where c.Phone like 'Ale%' and city = 'Berlin'
 order by TotalChildren desc
 
+#TAREFA 6
+  
+-- Eu preciso localizar, adicionar os funcionários que trabalham na categoria Production Technician - WC20 que irão receber um aumento salarial de 2.000$ dólares --
+
+
+select *
+from HumanResources.Employee
+
+select BusinessEntityID, JobTitle
+from HumanResources.Employee
+where JobTitle = 'production technician - wc20'
+
+-- Agora eu preciso adicionar uma coluna com os funcionários que trabalham na categoria Production Technician - WC20 com suas respectivas identificações --
+
+create table #EmployeeSalaries
+(
+    BusinessEntityID int,
+    Name varchar(100),
+    LastName varchar(100),
+    JobTitle varchar(100),
+    Salary decimal(18,2)
+)
+
+-- Preenchendo na nova tabela as informações de BusinessEntityID, JobTitle --
+
+select *
+from #EmployeeSalaries
+
+
+INSERT INTO #EmployeeSalaries (BusinessEntityID, JobTitle) VALUES
+(135, 'Production Technician - WC20'),
+(136, 'Production Technician - WC20'),
+(137, 'Production Technician - WC20'),
+(138, 'Production Technician - WC20'),
+(139, 'Production Technician - WC20'),
+(140, 'Production Technician - WC20'),
+(141, 'Production Technician - WC20'),
+(142, 'Production Technician - WC20'),
+(143, 'Production Technician - WC20'),
+(144, 'Production Technician - WC20'),
+(153, 'Production Technician - WC20'),
+(154, 'Production Technician - WC20'),
+(155, 'Production Technician - WC20'),
+(156, 'Production Technician - WC20'),
+(157, 'Production Technician - WC20'),
+(158, 'Production Technician - WC20'),
+(159, 'Production Technician - WC20'),
+(181, 'Production Technician - WC20'),
+(182, 'Production Technician - WC20'),
+(183, 'Production Technician - WC20'),
+(184, 'Production Technician - WC20'),
+(185, 'Production Technician - WC20');
+
+
+-- Juntandos as informações, agora precisa adicionar e-mail e telefone dos funcionários --
+
+select p.name, p.lastname, s.jobtitle, s.BusinessEntityID
+from person.person p
+inner join #EmployeeSalaries s
+on p.BusinessEntityID = s.BusinessEntityID
+
+insert into #EmployeeSalaries (Name, LastName) VALUES
+('Ivo', 'Salmre'),
+('Sylvester', 'Valdez'),
+('Anibal', 'Sousa'),
+('Samantha', 'Smith'),
+('Hung-Fu', 'Ting'),
+('Prasanna', 'Samarawickrama'),
+('Min', 'Su'),
+('Olinda', 'Turner'),
+('Krishna', 'Sunkammurali'),
+('Paul', 'Singh'),
+('Hanying', 'Feng'),
+('Raymond', 'Sam'),
+('Fadi', 'Fakhouri'),
+('Lane', 'Sacksteder'),
+('Linda', 'Randall'),
+('Shelley', 'Dyck'),
+('Terrence', 'Earls'),
+('Michael', 'Hines'),
+('Nitin', 'Mirchandani'),
+('Barbara', 'Decker'),
+('John', 'Chen'),
+('Stefen', 'Hesse');
+
+-- Corrigindo as linhas que foram adicionadas com valores nulos na tabela #EmployeeSalaries --
+
+DELETE FROM #EmployeeSalaries
+WHERE BusinessEntityID IS NULL;
+
+
+-- Agora, utilizar inner join para adicionar as informações de e-mail e telefone dos funcionários para formatar e enviar a nova tabela para o financeiro e--
+
+select s.BusinessEntityID, CONCAT(s.Name ,'', s.LastName) as Nome, s.JobTitle as Categoria, e.EmailAddress as Email
+from #EmployeeSalaries s
+inner join person.EmailAddress e
+on s.BusinessEntityID = e.BusinessEntityID
+
+
+
 
