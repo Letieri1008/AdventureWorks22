@@ -17,13 +17,35 @@ Caso queira treinar, você pode baixar o banco de dados pelo link: [AdventureWor
 Meu supervisor solicitou uma consulta para identificar os produtos mais vendidos da categoria **Mountain Bikes**.
 
 Para isso, utilizei:
+
 - `INNER JOIN` para relacionar tabelas com **ProductID**.
 - `LIKE 'Mountain%'` para filtrar produtos que contenham ou comecem com "Mountain".
 
 📂 **Código disponível em `adventureworksprojeto1.sql`.**
 
 🔍 **Resultado:**
-![Resultado Tarefa 1](imagem)
+-- A consulta deve incluir o nome do produto, a quantidade vendida e o preço unitário.
+
+SELECT * 
+FROM Production.Product;
+
+SELECT * 
+FROM sales.SalesOrderDetail;
+
+SELECT p.Name AS Produto, sod.OrderQty AS Quantidade, sod.UnitPrice AS Preco_Unitario
+FROM Sales.SalesOrderDetail sod
+INNER JOIN Production.Product p
+ON sod.ProductID = p.ProductID
+WHERE p.Name LIKE 'Mountain%';
+
+SELECT TOP 10 p.Name AS Produto, sod.OrderQty AS Quantidade, sod.UnitPrice AS Preco_Unitario
+FROM Sales.SalesOrderDetail sod
+INNER JOIN Production.Product p
+ON sod.ProductID = p.ProductID
+WHERE p.Name LIKE 'Mountain%'
+ORDER BY sod.OrderQty DESC;
+
+
 
 ---
 
