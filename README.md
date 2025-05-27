@@ -24,6 +24,7 @@ Para isso, utilizei:
 📂 **Código disponível em `adventureworksprojeto1.sql`.**
 
 🔍 **Resultado:**
+```
 -- A consulta deve incluir o nome do produto, a quantidade vendida e o preço unitário.
 
 SELECT * 
@@ -45,7 +46,7 @@ ON sod.ProductID = p.ProductID
 WHERE p.Name LIKE 'Mountain%'
 ORDER BY sod.OrderQty DESC;
 
-
+```
 
 ---
 
