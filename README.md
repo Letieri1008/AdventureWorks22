@@ -66,10 +66,6 @@ sql
 SELECT FORMAT(ModifiedDate, 'dd/MM/yyyy') AS FormattedDate
 Assim, pude organizar corretamente os dados.
 ```
-📂 Código disponível em adventureworksprojeto1.sql.
-
-![image](https://github.com/user-attachments/assets/4c9a4db9-43ee-4b33-8f23-b1482f59b4df)
-
 
 #TAREFA 3
 
