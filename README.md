@@ -79,7 +79,16 @@ ORDER BY so.linetotal DESC
 📌 Tarefa 3: Levantamento de Entidades Cadastradas
 Após uma reunião no setor financeiro, foi solicitado um levantamento de entidades cadastradas com um determinado tipo de cartão.
 
-📂 Código disponível em adventureworksprojeto1.sql.
+📂 Código
+
+```
+select cc.CardType, COUNT(cc.CardType) as Total
+from sales.CreditCard cc
+inner join sales.PersonCreditCard pcc
+on cc.CreditCardID = pcc.CreditCardID
+group by cc.CardType
+order by Total desc
+```
 
 🔍 Resultado:
 
