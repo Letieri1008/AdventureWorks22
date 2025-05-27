@@ -132,24 +132,56 @@ SELECT * FROM TableName WHERE Location LIKE 'Ale%'
 ```
 
 📂 Código
+```
+-- preciso fazer um levantamento dos profissionais que possuem a maior quantidade de filhos na cidade de Berlin e London  --
+Para isso, vou utilizar as tabelas
+dbo.DimCustomer
+dbo.DimGeography
 
+select TOP 10 c.FirstName, c.Lastname, c.Gender, c.TotalChildren, c.Phone, g.City
+from dbo.dimcustomer c 
+inner join dbo.DimGeography g
+on c.GeographyKey = g.GeographyKey
+where city = 'Berlin' 
+order by TotalChildren desc
 
+select TOP 10 c.FirstName, c.Lastname, c.Gender, c.TotalChildren, c.Phone, g.City
+from dbo.dimcustomer c 
+inner join dbo.DimGeography g
+on c.GeographyKey = g.GeographyKey
+where city = 'London' 
+order by TotalChildren desc
 
-🔍 Resultado:
+select c.FirstName, c.Lastname, c.Gender, c.TotalChildren, c.Phone, g.City
+from dbo.dimcustomer c 
+inner join dbo.DimGeography g
+on c.GeographyKey = g.GeographyKey
+where c.Phone like 'Ale%' and city = 'Berlin'
+order by TotalChildren desc
+```
+
+# 🔍 Resultado:
 
 ![image](https://github.com/user-attachments/assets/bff34a2b-e70e-4f77-abf8-7d9425d74bd2)
 ![image](https://github.com/user-attachments/assets/53996fd4-fadf-4952-a680-37e479c0f392)
 ![image](https://github.com/user-attachments/assets/6442221f-c152-4883-ac23-5010034cd5f7)
 
-#TAREFA 6
+# 📌 Tarefa 6: Funcionários que Receberão Aumento Salarial
+O setor financeiro solicitou um levantamento dos funcionários que receberão aumento salarial, incluindo identificação, setor e e-mail.
 
--- Realizaram um pedido para coletar dados dos funcionários que irão receber um aumento salarial, e o setor financeiro precisa da identificação, setor e E-mail
--- Para isso, preciso criar uma nova tabela temporária no banco de dados e enviar as informações corretamente
--- As tabelas utilizadas foram:
-- HumanResources.Employee
-- person.Person
+📌 Para isso, foi criada uma tabela temporária no banco de dados.
 
-  (Os comandos estão na pasta sql para consulta)
+📌 Tabelas utilizadas:
+
+- ``RecursosHumanos.Funcionario``
+
+- ``Pessoa.Pessoa``
+
+📂 Código 
+
+
+🔍 Resultado:
+
 
 Resultado:
 
