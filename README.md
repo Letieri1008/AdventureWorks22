@@ -1,4 +1,3 @@
-Ótimo! Vou deixar seu texto mais organizado e apresentável para o GitHub, garantindo uma estrutura clara e fácil de entender. Aqui está a versão aprimorada:
 
 ---
 
@@ -12,7 +11,7 @@ Caso queira treinar, você pode baixar o banco de dados pelo link: [AdventureWor
 
 ---
 
-## 📌 Tarefa 1: Produtos Mais Vendidos – Mountain Bikes
+# Tarefa 1: Produtos Mais Vendidos – Mountain Bikes
 
 Meu supervisor solicitou uma consulta para identificar os produtos mais vendidos da categoria **Mountain Bikes**.
 
@@ -54,7 +53,7 @@ WHERE p.Name LIKE 'Mountain%'
 ORDER BY sod.OrderQty DESC;
 ```
 
-📌 Tarefa 2: 
+#  Tarefa 2: 
 - 20 Produtos com Maior Faturamento (2013) ,Foi necessário extrair os 20 produtos com maior faturamento no ano de 2013.
 
 📌 Desafio: Os dados na tabela SalesOrder estavam formatados como dd/mm/aaaa - hora, resultando em erro ao ordenar por data.
@@ -76,7 +75,7 @@ where so.ModifiedDate between '2013-01-01' and '2013-12-31'
 ORDER BY so.linetotal DESC
 ```
 
-📌 Tarefa 3: Levantamento de Entidades Cadastradas
+#  Tarefa 3: Levantamento de Entidades Cadastradas
 Após uma reunião no setor financeiro, foi solicitado um levantamento de entidades cadastradas com um determinado tipo de cartão.
 
 📂 Código
@@ -95,7 +94,7 @@ order by Total desc
 ![image](https://github.com/user-attachments/assets/bd315812-5f60-4640-94e6-34adeb9e9935)
 
 
-Tarefa 4: Funcionários do Setor de Manufatura
+# Tarefa 4: Funcionários do Setor de Manufatura
 O setor de Recursos Humanos solicitou um levantamento de funcionários que trabalham no grupo de Manufatura.
 
 📌 Tabelas utilizadas:
@@ -119,7 +118,8 @@ order by HireDate desc
 ![image](https://github.com/user-attachments/assets/2200778e-9da0-49ac-ad6a-034071d7ccdc)
 
 
-📌 ###Tarefa 5: Profissionais com Maior Quantidade de Filhos
+# Tarefa 5: Profissionais com Maior Quantidade de Filhos 
+
 Foi solicitado um levantamento dos 10 profissionais com maior quantidade de filhos nas cidades de Berlim e Londres.
 
 📌 Além disso, durante uma reunião, foi necessário procurar um funcionário sobre o qual só tínhamos informações de localização e telefone.
