@@ -53,8 +53,8 @@ WHERE p.Name LIKE 'Mountain%'
 ORDER BY sod.OrderQty DESC;
 ```
 
-#  Tarefa 2: 
-- 20 Produtos com Maior Faturamento (2013) ,Foi necessário extrair os 20 produtos com maior faturamento no ano de 2013.
+#  Tarefa 2: 20 Produtos com Maior Faturamento (2013)
+- Foi necessário extrair os 20 produtos com maior faturamento no ano de 2013.
 
 📌 Desafio: Os dados na tabela SalesOrder estavam formatados como dd/mm/aaaa - hora, resultando em erro ao ordenar por data.
 
