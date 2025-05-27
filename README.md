@@ -29,11 +29,15 @@ Para isso, utilizei:
 -- 📌 A consulta inclui o nome do produto, a quantidade vendida e o preço unitário.
 
 -- 🔍 Verificando os dados das tabelas principais
+
+```
 SELECT * FROM Production.Product;
 SELECT * FROM Sales.SalesOrderDetail;
+```
 
 -- 🔹 Consulta para buscar todos os produtos da categoria "Mountain Bikes"
 
+```
 SELECT p.Name AS Produto, sod.OrderQty AS Quantidade, sod.UnitPrice AS Preco_Unitario
 FROM Sales.SalesOrderDetail sod
 INNER JOIN Production.Product p
@@ -48,7 +52,7 @@ INNER JOIN Production.Product p
 ON sod.ProductID = p.ProductID
 WHERE p.Name LIKE 'Mountain%'
 ORDER BY sod.OrderQty DESC;
-
+```
 
 ![image](https://github.com/user-attachments/assets/698b6a45-96e7-4f29-ab79-893b656d3764)
 
