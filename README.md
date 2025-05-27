@@ -76,20 +76,33 @@ where so.ModifiedDate between '2013-01-01' and '2013-12-31'
 ORDER BY so.linetotal DESC
 ```
 
-#TAREFA 3
+📌 Tarefa 3: Levantamento de Entidades Cadastradas
+Após uma reunião no setor financeiro, foi solicitado um levantamento de entidades cadastradas com um determinado tipo de cartão.
 
-O terceiro desafio, foi feita uma reunião no setor financeiro, onde o meu gerente havia participado, foi solicitado a ele um levantamento do número de entidades cadastradas que possuem o maior cadastrado em um tipo x de cartão --
+📂 Código disponível em adventureworksprojeto1.sql.
 
-Resultado:
+🔍 Resultado:
 
 ![image](https://github.com/user-attachments/assets/bd315812-5f60-4640-94e6-34adeb9e9935)
 
 
-#TAREFA 4
+Tarefa 4: Funcionários do Setor de Manufatura
+O setor de Recursos Humanos solicitou um levantamento de funcionários que trabalham no grupo de Manufatura.
 
--- O nosso gestor de RH precisa de um levantamento de todos os funcionários que trabalham no grupo de Manufatura --
--- tabela HumanResources.vEmployeeDepartmentHistory , HumanResources.Employee
-- O resultado está na lista de códigos 
+📌 Tabelas utilizadas:
+
+HumanResources.vEmployeeDepartmentHistory
+
+HumanResources.Employee
+
+📂 Código 
+
+
+
+
+
+
+🔍 Resultado:
 
 ![image](https://github.com/user-attachments/assets/2200778e-9da0-49ac-ad6a-034071d7ccdc)
 
