@@ -1,21 +1,114 @@
-# AdventureWorks22
-Tarefas utilizando linguagem SQL no SQL Serve Management + vscode para produtitividade.
-(Todos os comandos feitos para estudo ou apresentação estão disponíveis em adventureworksprojeto1.sql)
+Ótimo! Vou deixar seu texto mais organizado e apresentável para o GitHub, garantindo uma estrutura clara e fácil de entender. Aqui está a versão aprimorada:
 
-Caso queira treinar, você pode baixar pelo link: https://learn.microsoft.com/pt-br/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms
+---
 
-#TAREFA 1
+# 🚀 Tarefas SQL para Produtividade com SQL Server Management Studio e VS Code
 
-Na primeira tarefas, foi solicitado: O meu supervisor solicitou que realizasse uma consulta no banco de dados AdventureWorks para obter informações sobre os produtos mais vendidos da categoria Mountain Bikes
+Este repositório contém consultas SQL realizadas para estudo e apresentações acadêmicas, utilizando o banco de dados AdventureWorks.
 
+📂 **Todos os comandos utilizados estão disponíveis em `adventureworksprojeto1.sql`.**
 
-- As linhas de código estão publicas na pasta adventureworksprojeto1.sql
-- Para obter os resultados foi necessário utilizar os comandos INNER JOIN e LIKE para juntar as colunas das diferente tabelas que contem uma relação em ProductID e filtrar a palabra 'Mountain%'
-- % A porcentagem indica o nome que eu quero que seja filtrado, então, todos os nomes que contem ou começem com M ou Moutain serão exibidos.
--  O resultado está na lista de códigos 
+Caso queira treinar, você pode baixar o banco de dados pelo link: [AdventureWorks - Microsoft](https://learn.microsoft.com/pt-br/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms).
 
-resultado da coleta no banco de dados final:
+---
 
+## 📌 Tarefa 1: Produtos Mais Vendidos – Mountain Bikes
+
+Meu supervisor solicitou uma consulta para identificar os produtos mais vendidos da categoria **Mountain Bikes**.
+
+Para isso, utilizei:
+- `INNER JOIN` para relacionar tabelas com **ProductID**.
+- `LIKE 'Mountain%'` para filtrar produtos que contenham ou comecem com "Mountain".
+
+📂 **Código disponível em `adventureworksprojeto1.sql`.**
+
+🔍 **Resultado:**
+![Resultado Tarefa 1](imagem)
+
+---
+
+## 📌 Tarefa 2: 20 Produtos com Maior Faturamento (2013)
+
+Foi necessário extrair os **20 produtos com maior faturamento** no ano de 2013.
+
+📌 Desafio: Os dados na tabela `SalesOrder` estavam formatados como `dd/mm/aaaa - hora`, resultando em erro ao ordenar por data.
+
+🛠 Solução:
+```sql
+SELECT FORMAT(ModifiedDate, 'dd/MM/yyyy') AS FormattedDate
+```
+Assim, pude organizar corretamente os dados.
+
+📂 **Código disponível em `adventureworksprojeto1.sql`.**
+
+🔍 **Resultado:**
+![Resultado Tarefa 2](imagem)
+
+---
+
+## 📌 Tarefa 3: Levantamento de Entidades Cadastradas
+
+Após uma reunião no setor financeiro, foi solicitado um levantamento de entidades cadastradas com um determinado tipo de cartão.
+
+📂 **Código disponível em `adventureworksprojeto1.sql`.**
+
+🔍 **Resultado:**
+![Resultado Tarefa 3](imagem)
+
+---
+
+## 📌 Tarefa 4: Funcionários do Setor de Manufatura
+
+O setor de **Recursos Humanos** solicitou um levantamento de funcionários que trabalham no grupo de **Manufatura**.
+
+📌 Tabelas utilizadas:
+- `HumanResources.vEmployeeDepartmentHistory`
+- `HumanResources.Employee`
+
+📂 **Código disponível em `adventureworksprojeto1.sql`.**
+
+🔍 **Resultado:**
+![Resultado Tarefa 4](imagem)
+
+---
+
+## 📌 Tarefa 5: Profissionais com Maior Quantidade de Filhos
+
+Foi solicitado um levantamento dos **10 profissionais** com maior quantidade de filhos nas cidades de **Berlim e Londres**.
+
+📌 Além disso, durante uma reunião, foi necessário procurar um funcionário sobre o qual só tínhamos informações de localização e telefone.
+
+🛠 Solução:
+```sql
+SELECT * FROM TableName WHERE Location LIKE 'Ale%'
+```
+📂 **Código disponível em `adventureworksprojeto1.sql`.**
+
+🔍 **Resultado:**
+![Resultado Tarefa 5](imagem)
+
+---
+
+## 📌 Tarefa 6: Funcionários que Receberão Aumento Salarial
+
+O setor financeiro solicitou um levantamento dos funcionários que receberão aumento salarial, incluindo **identificação, setor e e-mail**.
+
+📌 Para isso, foi criada uma **tabela temporária** no banco de dados.
+
+📌 Tabelas utilizadas:
+- `RecursosHumanos.Funcionario`
+- `Pessoa.Pessoa`
+
+📂 **Código disponível em `adventureworksprojeto1.sql`.**
+
+🔍 **Resultado:**
+![Resultado Tarefa 6](imagem)
+
+---
+
+Agora seu texto está muito mais organizado e pronto para o GitHub! Ficou mais estruturado, com seções claras e um estilo mais legível. 🚀  
+
+Se precisar de mais ajustes, é só me avisar! 😊
 ![image](https://github.com/user-attachments/assets/698b6a45-96e7-4f29-ab79-893b656d3764)
 
 
