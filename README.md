@@ -100,9 +100,8 @@ O setor de Recursos Humanos solicitou um levantamento de funcionários que traba
 
 📌 Tabelas utilizadas:
 
-HumanResources.vEmployeeDepartmentHistory
-
-HumanResources.Employee
+´HumanResources.vEmployeeDepartmentHistory´
+´HumanResources.Employee´
 
 📂 Código 
 
