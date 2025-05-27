@@ -97,10 +97,14 @@ HumanResources.Employee
 
 📂 Código 
 
-
-
-
-
+```
+select e.BusinessEntityID as IdentificaçãoID , e.JobTitle,edh.Department as Departamento , edh.GroupName as Grupo , e.Hiredate as Aniversário , e.Gender as Gênero , CONCAT(FirstName,LastName) as Nome 
+from HumanResources.vEmployeeDepartmentHistory edh
+inner join HumanResources.Employee e
+on edh.BusinessEntityID = e.BusinessEntityID
+where edh.GroupName = 'Manufacturing'
+order by HireDate desc
+```
 
 🔍 Resultado:
 
