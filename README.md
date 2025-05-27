@@ -67,6 +67,15 @@ SELECT FORMAT(ModifiedDate, 'dd/MM/yyyy') AS FormattedDate
 Assim, pude organizar corretamente os dados.
 ```
 
+```
+select p.name,p.color, so.OrderQty, so.LineTotal, so.modifieddate
+from sales.SalesOrderDetail so
+inner join Production.Product p
+on so.ProductID = p.ProductID
+where so.ModifiedDate between '2013-01-01' and '2013-12-31'  
+ORDER BY so.linetotal DESC
+```
+
 #TAREFA 3
 
 O terceiro desafio, foi feita uma reunião no setor financeiro, onde o meu gerente havia participado, foi solicitado a ele um levantamento do número de entidades cadastradas que possuem o maior cadastrado em um tipo x de cartão --
