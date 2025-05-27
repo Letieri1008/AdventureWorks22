@@ -25,8 +25,8 @@ Para isso, utilizei:
 
 🔍 **Resultado:**
 
--- 🚀 Consulta SQL para obter os produtos mais vendidos na categoria "Mountain Bikes"
--- 📌 A consulta inclui o nome do produto, a quantidade vendida e o preço unitário.
+- 🚀 Consulta SQL para obter os produtos mais vendidos na categoria "Mountain Bikes"
+- 📌 A consulta inclui o nome do produto, a quantidade vendida e o preço unitário.
 
 -- 🔍 Verificando os dados das tabelas principais
 
