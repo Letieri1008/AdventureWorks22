@@ -54,22 +54,19 @@ WHERE p.Name LIKE 'Mountain%'
 ORDER BY sod.OrderQty DESC;
 ```
 
-![image](https://github.com/user-attachments/assets/698b6a45-96e7-4f29-ab79-893b656d3764)
+📌 Tarefa 2: 
+- 20 Produtos com Maior Faturamento (2013) ,Foi necessário extrair os 20 produtos com maior faturamento no ano de 2013.
 
+📌 Desafio: Os dados na tabela SalesOrder estavam formatados como dd/mm/aaaa - hora, resultando em erro ao ordenar por data.
 
-![image](https://github.com/user-attachments/assets/fd4125c1-9812-4035-a175-f3b4da5d51fd)
+🛠 Solução:
 
-#TAREFA 2
-
-O segundo desafio, consistia em extrair informações a respeito dos 20 produtos que obtiveram o maior faturamento no ano de 2013
-- Todavia, na tabela ordem de vendas, as datas estavam formatadas em dd/mm/yyyy - hora
-- Logo, ao construir uma linha de comando utilizando between e ordenar no modo descrescente, apresentou o seguinte erro:
-
-![image](https://github.com/user-attachments/assets/288de386-9020-408e-a006-8da1b53825a1)
-
-- Portanto, precisei formatar para SELECT FORMAT(ModifiedDate, 'dd/MM/yyyy') AS FormattedDate
-- E assim, consegui unir a coluna que foi modificada de outra tabela e construir o que foi solicitado pelo gerente.
-- O resultado está na lista de códigos 
+```
+sql
+SELECT FORMAT(ModifiedDate, 'dd/MM/yyyy') AS FormattedDate
+Assim, pude organizar corretamente os dados.
+```
+📂 Código disponível em adventureworksprojeto1.sql.
 
 ![image](https://github.com/user-attachments/assets/4c9a4db9-43ee-4b33-8f23-b1482f59b4df)
 
